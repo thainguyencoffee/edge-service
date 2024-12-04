@@ -1,0 +1,2 @@
+edge-service:
+  greeting: "Hello, World! (from edge k8s)"
