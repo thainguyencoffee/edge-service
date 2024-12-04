@@ -49,5 +49,5 @@ management:
       enabled: true
     os:
       enabled: true
-edge:
+edge-service:
   greeting: "Hello, World! (from edge local)"

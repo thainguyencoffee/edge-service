@@ -7,14 +7,14 @@ import reactor.core.publisher.Mono;
 @RestController
 public class GreetingController {
 
-    private final EdgeProperties edgeProperties;
+    private final EdgeServiceProperties edgeServiceProperties;
 
-    public GreetingController(EdgeProperties edgeProperties) {
-        this.edgeProperties = edgeProperties;
+    public GreetingController(EdgeServiceProperties edgeServiceProperties) {
+        this.edgeServiceProperties = edgeServiceProperties;
     }
 
     @GetMapping("/greeting")
     public Mono<String> greeting() {
-        return Mono.just(edgeProperties.greeting());
+        return Mono.just(edgeServiceProperties.greeting());
     }
 }
